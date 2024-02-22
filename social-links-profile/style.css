@@ -16,6 +16,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -31,9 +33,10 @@ body {
 .card {
     background-color: var(--dark-grey);
     width: 384px;
-    height: 611px;
+    height: auto;
     padding: 40px;
     border-radius: 12px;
+    transition: 1s ease;
 }
 
 .card * {
@@ -73,8 +76,7 @@ body {
 }
 
 .card .link {
-    width: 304px;
-    height: 45px;
+    height: auto;
     background-color: var(--grey);
     border-radius: 8px;
     text-decoration: none;
@@ -90,4 +92,19 @@ body {
 
 .github {
     margin-top: 24px;
+}
+
+
+@media (width <= 375px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .card {
+        padding: 24px;
+        min-width: 225px;
+        height: 100vh;
+    }
+
+    
 }
