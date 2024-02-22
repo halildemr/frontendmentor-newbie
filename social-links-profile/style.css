@@ -14,3 +14,80 @@
     --grenn:     hsl(75,94%,57%);
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--off-black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Inter;
+}
+
+.card {
+    background-color: var(--dark-grey);
+    width: 384px;
+    height: 611px;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.card * {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+}
+
+.card img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+
+.card .name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.card .location {
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--grenn);
+    margin-top: 4px;
+}
+
+.card .dev-reader {
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.card a:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.card .link {
+    width: 304px;
+    height: 45px;
+    background-color: var(--grey);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.card .link:hover {
+    background-color: var(--grenn);
+    color: var(--grey);
+}
+
+.github {
+    margin-top: 24px;
+}
