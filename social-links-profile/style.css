@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf) 
+    format("truetype");
+}
+
+:root {
+
+    /* Colors */
+    --white:     hsl(0, 0%, 100%);
+    --grey:      hsl(0,0%,20%);
+    --dark-grey: hsl(0,0%,12%);
+    --off-black: hsl(0,0%,8%);
+    --grenn:     hsl(75,94%,57%);
+}
+
