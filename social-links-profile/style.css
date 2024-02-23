@@ -36,7 +36,7 @@ body {
     height: auto;
     padding: 40px;
     border-radius: 12px;
-    transition: 1s ease;
+    transition: all 1s ease;
 }
 
 .card * {
