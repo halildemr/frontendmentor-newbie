@@ -1,0 +1,139 @@
+@font-face {
+    font-family: figtree;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white:  hsl(0, 0%, 100%);
+    --grey:   hsl(0, 0%, 50%);
+    --black:  hsl(0, 0%, 7%);
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: figtree;
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--yellow);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.blog-card {
+    width: 384px;
+    height: 522px;
+    padding: 24px;
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 1px solid var(--black);
+    border-style: inset;
+    box-shadow: 16px 16px 0 0 black;
+    transition: width 1s ease, height 1s ease;
+}
+
+.blog-card .illustration-article {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.blog-card .info {
+    width: 100%;
+    height: auto;
+    margin-bottom: 22px;
+}
+
+.blog-card .info .learn {
+    display: block;
+    width: 73px;
+    height: 26px;
+    border-radius: 4px;
+    background-color: var(--yellow);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 12px
+}
+
+.blog-card .info .date {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 150%;
+    margin-bottom: 12px;
+    color: var(--black);
+}
+
+.blog-card .info .title {
+    text-decoration: none;
+    font-size: 2.4rem;
+    line-height: 150%;
+    font-weight: 900;
+    margin-bottom: 12px;
+    color: var(--black);
+}
+
+.blog-card .info .title:hover {
+    color: var(--yellow);
+}
+
+.blog-card .info .description {
+    font-size: 1.6rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--grey);
+}
+
+.blog-card .instructive {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.blog-card .instructive .avatar {
+    width: 32px;
+    height: auto;
+    margin-right: 12px;
+}
+
+.blog-card .instructive .name {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--black);
+}
+
+
+
+
+
+/* ========= Responsive ========= */
+
+@media (width <= 375px) {
+    .blog-card {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+        box-shadow: none;
+        border: none;
+    }
+}
