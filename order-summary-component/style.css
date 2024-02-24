@@ -33,6 +33,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: all 2s ease;
 }
 
 
@@ -56,6 +58,10 @@ body {
 .card .box {
     width: 100%;
     padding: 45px 48px 48px 48px;
+    transition: 
+    padding 1s ease,
+    width 2s ease,
+    height 2s ease;
 }
 
 .card .box .title  {
@@ -152,4 +158,26 @@ body {
 
 .card .box .cancel:hover {
     color: #1f2e55;
+}
+
+
+
+/* ======== Responsive ======== */
+
+@media (width <= 375px) {
+
+    body {
+        align-items: flex-start;
+        min-width: 328px;
+    }
+
+    .card {
+        width: 95%;
+        height: auto;
+        margin-top: 71px;
+    }
+
+    .card .box {
+        padding: 32px 24px;
+    }
 }
