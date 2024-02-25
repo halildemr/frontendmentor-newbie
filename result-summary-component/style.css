@@ -166,6 +166,19 @@ body {
     font-weight: 500;
 }
 
+.sub-container .box2 .layout .right span:first-child {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--Dark-gray-blue);
+}
+
+.sub-container .box2 .layout .right span:last-child {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--Dark-gray-blue);
+    opacity: 50%;
+}
+
 .sub-container .box2 .b1 {
     background-color: hsla(0, 100%, 67%, 0.05);
     margin-bottom: 16px;
@@ -284,6 +297,10 @@ body {
 
     .sub-container .box2 .b4 {
         margin-bottom: 24px;
+    }
+
+    .sub-container .box2 .layout .right span:first-child {
+        font-size: 1.6rem;
     }
 
     .attribution {
