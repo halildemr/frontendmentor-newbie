@@ -18,9 +18,8 @@
     /* gradients */
     --Light-slate-blue-background: hsl(252, 100%, 67%);
     --Light-royal-blue-background: hsl(241, 81%, 54%);
-    --Violet-blue-circle:          hsla(256, 72%, 46%, 1);
-    --Persian-blue-circle:         hsla(241, 72%, 46%, 0);
-
+    --Violet-blue-circle:          hsla(256, 71%, 46%, 1);
+    --Persian-blue-circle:         hsla(241, 71%, 46%, 0);
 }
 
 * {
@@ -42,36 +41,180 @@ body {
     align-items: center;
 }
 
-
 .container {
     width: 100%;
     min-width: 736px;
     height: 512px;
-    background-color: teal;
 }
 
 .sub-container {
     width: 736px;
     height: 512px;
-    background-color: white;
     margin: 0 auto;
+    background-color: var(--White);
     border-radius: 32px;
     display: flex;
     flex-direction: row;
-    transition: all 1s ease;
+    transition: width 1s ease, height 1s ease;
 }
+
+
+
+
+
+/*========== box1 ==========*/
 
 .sub-container .box1 {
     width: 50%;
     height: 512px;
     background-color: bisque;
     border-radius: 32px;
+    background-image: 
+    linear-gradient(to top, var(--Light-royal-blue-background), var(--Light-slate-blue-background));
+    padding: 38px 54px 46px 54px;
 }
+
+.sub-container .box1 .result {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--Light-lavender);
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.sub-container .box1 .box-point {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 28px auto;
+    border-radius: 50%;
+    background-image: 
+    linear-gradient(to bottom, var(--Violet-blue-circle),var(--Persian-blue-circle));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-container .box1 .box-point .point1 {
+    font-size: 7.2rem;
+    font-weight: 800;
+    line-height: 72px;
+    margin-bottom: 4px;
+    color: var(--White);
+}
+
+ .sub-container .box1 .box-point .point2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--Light-lavender);
+ }
+
+.sub-container .box1 .title {
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--White);
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.sub-container .box1 .parag {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--Light-lavender);
+    text-align: center;
+}
+
+
+
+
+
+/*========== box2 ==========*/
 
 .sub-container .box2 {
     width: 50%;
     height: 512px;
-    background-color:goldenrod;
     border-radius: 32px;
+    padding: 38px 40px 46px 37px;
+    border-radius: 32px;
+    background-color: var(--White);
 }
 
+.sub-container .box2 .summary {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--Dark-gray-blue);
+    margin-bottom: 28px;
+}
+
+.sub-container .box2 .layout {
+    padding: 18px 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.sub-container .box2 .layout .left {
+    display: flex;
+    align-items: center;
+}
+
+.sub-container .box2 .layout .left .text {
+    margin-left: 12px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.sub-container .box2 .b1 {
+    background-color: hsla(0, 100%, 67%, 0.05);
+    margin-bottom: 16px;
+}
+
+.sub-container .box2 .b1 .b1-left .text-reaction {
+    color: var(--Light-red);
+}
+
+.sub-container .box2 .b2 {
+    background-color: hsla(39, 100%, 56%,0.05);
+    margin-bottom: 16px;
+}
+
+.sub-container .box2 .b2 .b2-left .text-memory {
+    color: var(--Orangey-yellow);
+}
+
+.sub-container .box2 .b3 {
+    background-color: hsla(166, 100%, 37%, 0.05);
+    margin-bottom: 16px;
+}
+
+.sub-container .box2 .b3 .b3-left .text-verbal {
+    color: var(--Green-teal);
+}
+
+.sub-container .box2 .b4 {
+    background-color: hsla(234, 85%, 45%, 0.05);
+    margin-bottom: 41px;
+}
+
+.sub-container .box2 .b4 .b4-left .text-visual {
+    color: var(--Cobalt-blue);
+}
+
+.sub-container .box2 .btn-continue {
+    border: none;
+    width: 100%;
+    height: 56px;
+    border-radius: 128px;
+    background-color: var(--Dark-gray-blue);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--White);
+    cursor: pointer;
+}
+
+.sub-container .box2 .btn-continue:hover {
+    background-image:
+        linear-gradient(to top, var(--Light-royal-blue-background), var(--Light-slate-blue-background));
+}
