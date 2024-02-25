@@ -33,3 +33,45 @@ html {
     font-family: "hanken grotesk";
     font-size: 10px;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Pale-blue);
+    display: flex;
+    align-items: center;
+}
+
+
+.container {
+    width: 100%;
+    min-width: 736px;
+    height: 512px;
+    background-color: teal;
+}
+
+.sub-container {
+    width: 736px;
+    height: 512px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: row;
+    transition: all 1s ease;
+}
+
+.sub-container .box1 {
+    width: 50%;
+    height: 512px;
+    background-color: bisque;
+    border-radius: 32px;
+}
+
+.sub-container .box2 {
+    width: 50%;
+    height: 512px;
+    background-color:goldenrod;
+    border-radius: 32px;
+}
+
