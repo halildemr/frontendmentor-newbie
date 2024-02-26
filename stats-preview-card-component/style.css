@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+/* font-family: "Inter",sans-serif; */
+
+:root {
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+    --Dark-desaturated-blue:      hsl(244, 38%, 16%);
+    --Very-dark-blue:             hsl(233, 47%, 7%); 
+    --Soft-violet:                hsl(277, 64%, 61%);
+    --White:                      hsl(0, 0%, 100%); 
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 10px;
+}
+
+body {
+    
+}
+
