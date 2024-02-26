@@ -23,8 +23,6 @@ html {
 
 
 body {
-    position: relative;
-
     height: 100vh;
     display: flex;
     align-items: center;
@@ -122,4 +120,21 @@ body {
     font-weight: 400;
     letter-spacing: 1.5px;
     color: var(--Dark-grayish-blue);
+}
+
+
+/*========== Responsive ==========*/
+
+@media (width <= 375px) {
+
+    body {
+        background-size: 622px 621px, 622px 621px;
+        background-position:
+        top -354px left -410px, bottom -350px right -400px;
+        background-size: auto, aut o;
+    }
+
+    .container {
+        width: 326px;
+    }
 }
