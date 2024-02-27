@@ -151,7 +151,7 @@ body {
 
 /*======= RESPONSIVE =========*/
 
-@media (width <= 375px ) {
+@media (width <= 425px ) {
     body {
         height: auto;
         background-image: url(images/bg-mobile.svg);
@@ -179,7 +179,7 @@ body {
     .content img {
         width: 296px;
         height: auto;
-        margin-right: 0px;
+        margin: 0 auto;
     }
 
    .content .box h1 {
@@ -225,5 +225,9 @@ body {
 
    .attribution {
         width: 90%;
+   }
+
+   .content .box a:hover {
+       color: white;
    }
 }
