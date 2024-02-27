@@ -36,6 +36,10 @@ body {
     margin: 50px auto 85px auto;
 }
 
+.header img {
+    width: 200px;
+}
+
 .content {
     width: 1275px;
     margin: 0px auto 27px auto;
