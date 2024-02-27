@@ -225,7 +225,7 @@ body {
     }
 
     .attribution {
-        width: 90vw;
+        width: 90vw !important; 
     }
 
     .content .box a:hover {
