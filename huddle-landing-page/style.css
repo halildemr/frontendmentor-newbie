@@ -5,9 +5,9 @@
 /* font-family: "Open Sans", sans-serif; */
 
 :root {
-    --Violet:      hsl(257, 40%, 49%);
+    --Violet: hsl(257, 40%, 49%);
     --oft-Magenta: hsl(300, 69%, 71%);
-    --icon-hover:  hsl(322,100%,66%);
+    --icon-hover: hsl(322, 100%, 66%);
 }
 
 * {
@@ -151,11 +151,12 @@ body {
 
 /*======= RESPONSIVE =========*/
 
-@media (width <= 425px ) {
+@media (width <= 425px) {
     body {
+        min-width: 250px;
         height: auto;
         background-image: url(images/bg-mobile.svg);
-        background-size: 100%;
+        background-size: contain;
         background-position: top center;
         padding: 38px 36px 0px 36px;
     }
@@ -177,57 +178,57 @@ body {
     }
 
     .content img {
-        width: 296px;
+        width: 100%;
         height: auto;
         margin: 0 auto;
     }
 
-   .content .box h1 {
-       font-size: 2.4rem;
-       font-weight: 600;
-       line-height: 36px;
-       margin-bottom: 16px;
-       text-align: center;
-   }
+    .content .box h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 36px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
 
-   .content .box p {
-       font-size: 1.6rem;
-       font-weight: 400;
-       font-variation-settings: "wdth" 88;
-       line-height: 24px;
-       text-align: center;
-       margin-bottom: 48px;
-   }
+    .content .box p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-variation-settings: "wdth" 88;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 48px;
+    }
 
-   .content .box a {
-       width: 200px;
-       height: 40px;
-       border-radius: 20px;
-       text-align: center;
-       line-height: 40px;
-       font-size: 1.2rem;
-       font-weight: 400;
-       font-family: "Poppins", sans-serif;
-       text-decoration: none;
-       box-shadow: none;
-       margin: 0 auto;
-   }
+    .content .box a {
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        box-shadow: none;
+        margin: 0 auto;
+    }
 
-   .footer {
-       width: 100%;
-       margin-bottom: 300px;
-   }
+    .footer {
+        width: 100%;
+        margin-bottom: 300px;
+    }
 
-   .footer .container {
+    .footer .container {
         width: max-content;
         margin: 0 auto;
-   }
+    }
 
-   .attribution {
-        width: 90%;
-   }
+    .attribution {
+        width: 90vw;
+    }
 
-   .content .box a:hover {
-       color: white;
-   }
+    .content .box a:hover {
+        color: white;
+    }
 }
