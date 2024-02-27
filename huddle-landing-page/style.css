@@ -70,7 +70,7 @@ body {
 }
 
 .content .box a {
-    display: inline-block;
+    display: block;
     width: 200px;
     height: 56px;
     border-radius: 28px;
@@ -141,3 +141,85 @@ body {
     font-size: 2.1rem;
 }
 
+
+
+
+
+/*======= RESPONSIVE =========*/
+
+@media (width <= 375px ) {
+    body {
+        height: auto;
+        background-image: url(images/bg-mobile.svg);
+        background-size: 100%;
+        background-position: top center;
+        padding: 38px 36px 0px 36px;
+    }
+
+    .header {
+        width: 100%;
+        margin: 0px auto 70px auto;
+    }
+
+    .header img {
+        width: 120px;
+        height: auto;
+    }
+
+    .content {
+        width: auto;
+        margin: 0px auto 64px auto;
+        flex-direction: column;
+    }
+
+    .content img {
+        width: 296px;
+        height: auto;
+        margin-right: 0px;
+    }
+
+   .content .box h1 {
+       font-size: 2.4rem;
+       font-weight: 600;
+       line-height: 36px;
+       margin-bottom: 16px;
+       text-align: center;
+   }
+
+   .content .box p {
+       font-size: 1.6rem;
+       font-weight: 400;
+       font-variation-settings: "wdth" 88;
+       line-height: 24px;
+       text-align: center;
+       margin-bottom: 48px;
+   }
+
+   .content .box a {
+       width: 200px;
+       height: 40px;
+       border-radius: 20px;
+       text-align: center;
+       line-height: 40px;
+       font-size: 1.2rem;
+       font-weight: 400;
+       font-family: "Poppins", sans-serif;
+       text-decoration: none;
+       box-shadow: none;
+       margin: 0 auto;
+   }
+
+   .footer {
+       width: 100%;
+       margin-bottom: 300px;
+   }
+
+   .footer .container {
+        width: max-content;
+        margin: 0 auto;
+   }
+
+   .attribution {
+        width: 90%;
+   }
+}
