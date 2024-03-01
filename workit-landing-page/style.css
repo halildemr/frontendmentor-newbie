@@ -303,4 +303,37 @@ body {
     color: var(--bg-dark-purple);
 }
 
+.footer {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 121px 0px 110px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer a {
+    display: inline-block;
+}
+
+.footer .logo-footer {
+    margin-bottom: 57px;
+}
+
+.footer .social-media a:not(:last-child) {
+    margin-right: 28px;
+}
+
+.footer .social-media a:hover path {
+    fill: var(--bg-dark-purple);
+}
+
+
+
+
+
+
+
+
+
 
