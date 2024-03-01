@@ -45,7 +45,7 @@ html {
 }
 
 body {
-    background-color: #333 ;
+    background-color: white ;
 }
 
 
@@ -186,6 +186,7 @@ body {
 }
 
 .section-2 ul {
+    max-width: 1114px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -228,21 +229,78 @@ body {
     text-align: center;
 }
 
+.section-3 {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 110px 163px 0px 163px;
+    background-color: white;
+    transition: width 1s ease;
+}
 
+.section-3 .founder {
+    position: relative;
+    width: 1112px;
+    height: 586px;
+}
 
+.section-3 .founder .img-founder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450.29px;
+    height: 453px;
+}
 
+.section-3 .founder .founder-test {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 730px;
+    height: 413px;
+    padding: 65px 65px 0px 65px;
+    background-color: var(--bg-dark-purple);
+}
 
+.section-3 .founder .founder-test h2 {
+    font-size: 5.2rem;
+    font-weight: 600;
+    line-height: 64px;
+    margin-bottom: 32px;
+    color: var(--white);
+}
 
+.section-3 .founder .founder-test p {
+    font-size: 1.8rem;
+    font-family: "Manrope";
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 32px;
+}
 
+.section-3 .founder .founder-test img {
+    position: absolute;
+    left: 437px;
+    top: 263px;
+}
 
+.section-3 .founder .founder-test a {
+    display: block;
+    width: 190px;
+    height: 61px;
+    text-align: center;
+    line-height: 61px;
+    border: 2px solid var(--lime);
+    font-family: Manrope;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.18px;
+    text-decoration: none;
+    color: var(--lime);
+}
 
-
-
-
-
-
-
-
-
+.section-3 .founder .founder-test a:hover {
+    background-color: var(--lime);
+    color: var(--bg-dark-purple);
+}
 
 
