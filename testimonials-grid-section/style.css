@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 
-
 :root {
 
     /* Primary */
     --Moderate-violet:         hsl(263, 55%, 52%);
+    --img-person-border:       hsl(264,82%,70%);
     --Very-dark-grayish-blue:  hsl(217, 19%, 35%);
     --Very-dark-blackish-blue: hsl(219, 29%, 14%);
     --White:                   hsl(0, 0%, 100%);
@@ -17,7 +17,6 @@
     --Font-Barlow: 'Barlow Semi Condensed', sans-serif;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -27,4 +26,230 @@
 html {
     font-size: 10px;
     font-family: var(--Font-Barlow);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: var(--Light-grayish-blue);
+}
+
+
+
+
+
+
+
+
+
+
+/*========== DESKTOP DESIGN =========*/
+
+.grid-wrapper {
+    margin: 0 auto;
+}
+
+.grid-area {
+    display: grid;
+    grid-template:  repeat(2,minmax(282px, auto)) / repeat(4, minmax(200px,255px));
+    gap: 30px;
+}
+
+
+
+
+
+
+/*========= Common Features =========*/
+
+.grid-area .box {
+    border-radius: 8px;
+    padding: 26px 32px 30px 32px;
+}
+
+.grid-area .box .img-person {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 17px;
+}
+
+.grid-area .box .img-person-border {
+    border: 2px solid var(--img-person-border);
+}
+
+.grid-area .box .person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.grid-area .box .person .info-person * {
+    display: block;
+}
+
+.grid-area .box .person .info-person strong {
+    margin-bottom: 4px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 13px;
+}
+
+.grid-area .box .person .info-person span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 11px;
+}
+
+.grid-area .box .title {
+    margin-bottom: 16px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.grid-area .box .paragraph {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+
+
+
+
+/*========= Grid Box-1 =========*/
+
+.grid-area .box1 {
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 83% 0px;
+    
+    background-color: var(--Moderate-violet);
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.grid-area .box1 .person .info-person strong {
+    color: var(--White);
+}
+
+.grid-area .box1 .person .info-person span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.grid-area .box1 .title {
+    color: white;
+}
+
+.grid-area .box1 .paragraph {
+    color: hsla(0, 0%, 81%, 0.7);
+}
+
+
+
+
+
+/*========= Grid Box-2 =========*/
+
+.grid-area .box2 {
+    background-color: var(--Very-dark-grayish-blue);
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.grid-area .box2 .person .info-person strong {
+    color: var(--White);
+}
+
+.grid-area .box2 .person .info-person span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.grid-area .box2 .title {
+    color: white;
+}
+
+.grid-area .box2 .paragraph {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+
+/*========= Grid Box-3 =========*/
+
+.grid-area .box3 {
+    background-color: var(--White);
+    grid-area: 1 / 4 / 3 / 5;
+}
+
+.grid-area .box3 .person .info-person strong {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.grid-area .box3 .person .info-person span {
+    color: hsla(217, 19%, 35%, 0.5);
+}
+
+.grid-area .box3 .title {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.grid-area .box3 .paragraph {
+    color: hsla(217, 19%, 35%, 0.7);
+}
+
+
+
+
+
+/*========= Grid Box-4 =========*/
+
+.grid-area .box4 {
+    background-color: var(--White);
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.grid-area .box4 .person .info-person strong {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.grid-area .box4 .person .info-person span {
+    color: hsla(217, 19%, 35%, 0.5);
+}
+
+.grid-area .box4 .title {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.grid-area .box4 .paragraph {
+    color: hsla(217, 19%, 35%, 0.7);
+}
+
+
+
+
+
+/*========= Grid Box-5 =========*/
+
+.grid-area .box5 {
+    background-color: var(--Very-dark-blackish-blue);
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.grid-area .box5 .person .info-person strong {
+    color: var(--White);
+}
+
+.grid-area .box5 .person .info-person span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.grid-area .box5 .title {
+    color: var(--Light-grayish-blue);
+}
+
+.grid-area .box5 .paragraph {
+    color: rgba(255, 255, 255, 0.7);
 }
