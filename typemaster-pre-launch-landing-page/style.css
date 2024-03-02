@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*=========== Basic Definitions ==========*/
+
 :root {
     --orange:       hsl(22,89%,52%);
     --light-orange: hsl(22,100%,69%);
@@ -18,5 +20,78 @@
 html {
     font-family: "Barlow", sans-serif;
     font-style: normal;
+    font-size: 10px
 }
+
+
+/*=========== Typography ==========*/
+
+.typo-h1 {
+    font-size: 5.6rem;
+    font-weight: bolder;
+    line-height: 56px;
+    color: var(--dark-gray);
+}
+
+.typo-h2 {
+    font-size:3.2rem;
+    font-weight: bolder;
+    line-height: 32px;
+    color: var(--dark-gray);
+}
+
+.typo-h3 {
+    font-size: 2.4rem;
+    font-weight: bolder;
+    line-height: 28px;
+    color: var(--dark-gray);
+}
+
+.typo-paragraph {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--gray);
+}
+
+
+/*=========== Buttons ==========*/
+
+.btn-1 {
+    width: 175px;
+    height: 58px;
+    background-color: var(--orange);
+    border-radius: 8px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    color: var(--white);
+}
+
+.btn-1:hover {
+    background-color: var(--light-orange);
+}
+
+.btn-2 {
+    width: 175px;
+    height: 58px;
+    background-color: var(--gray);
+    border-radius: 8px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    color: var(--dark-gray);
+}
+
+.btn-2:hover {
+    color: var(--white);
+    background-color: var(--dark-gray);
+}
+
+
+
+
+/*=========== DESKTOP DESIGN ==========*/
 
