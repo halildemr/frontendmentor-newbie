@@ -281,6 +281,8 @@ body {
     }
 
     .grid-area .box1 {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
         background-position: 90% 0px;
         grid-area: 1 / 1 / 2 / 1;
     }
