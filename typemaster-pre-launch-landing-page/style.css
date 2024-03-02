@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 /*=========== Typography ==========*/
@@ -104,10 +104,67 @@ body {
     background-color: var(--white);
 }
 
-.wrapper .header {
+
+
+
+
+/*--------- Header ---------*/
+
+.header {
     width: 1100px;
     margin: 55px auto 83px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
+
+
+
+/*--------- Section 1 ---------*/
+
+.page-title {
+    min-width: 1100px;
+    background-image: url(assets/shared/pattern-square.svg);
+    background-repeat: no-repeat;
+    background-position: top right -120px;
+}
+
+.page-title-container {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-title .box {
+    width: 445px;
+}
+
+.page-title .box h1 {
+    margin-bottom: 24px;
+}
+
+.page-title .box p {
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+.page-title .box a {
+    margin-right: 40px;
+}
+
+.page-title .box span {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--gray);
+}
+
+.page-title img { 
+    width: 540px;
+}
+
+
