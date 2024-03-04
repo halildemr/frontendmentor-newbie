@@ -102,6 +102,7 @@ body {
 
 .wrapper {
     background-color: var(--white);
+    min-width: 1100px;
 }
 
 
@@ -110,7 +111,7 @@ body {
 
 /*--------- Header ---------*/
 
-.header {
+.page-header {
     width: 1100px;
     margin: 55px auto 83px auto;
     display: flex;
@@ -125,10 +126,10 @@ body {
 /*--------- Section 1 ---------*/
 
 .page-title {
-    min-width: 1100px;
     background-image: url(assets/shared/pattern-square.svg);
     background-repeat: no-repeat;
     background-position: top right -120px;
+    margin-bottom: 30px;
 }
 
 .page-title-container {
@@ -165,6 +166,127 @@ body {
 
 .page-title img { 
     width: 540px;
+    border-radius: 20px;
 }
 
 
+
+
+
+
+/*--------- Section 2 ---------*/
+
+.product {
+    background-image: url(assets/shared/pattern-square.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left -120px;
+    margin-bottom: 168px;
+}
+
+.product-container {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-container .box1 {
+    display: flex;
+}
+
+.product-container .box1 .img-wrapper {
+    position: relative;
+    margin-right: 30px;
+}
+
+.product-container .box1 .img-wrapper::after {
+    display: flex;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: hsl(22, 89%, 52%);
+    mix-blend-mode: multiply;
+}
+
+.product-container .box1 .img-wrapper .img1 {
+    width: 255px;
+    height: 480px;
+    border-radius: 20px;
+
+}
+
+.product-container .box1 .img2 {
+    width: 455px;
+    height: 480px;
+    border-radius: 20px;
+}
+
+.product-container .box2 {
+    width: 255px;
+    height: 265px;
+}
+
+.product-container .box2 h2 {
+    margin-bottom: 27px;
+}
+
+
+
+
+/*--------- Section 3 ---------*/
+
+.product-info {
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 323px / repeat(4, 255px);
+    gap: 30px;
+}
+
+.product-info div i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: var(--orange);
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.product-info div h2 {
+    margin-bottom: 24px;
+}
+
+
+
+
+
+
+/*--------- Footer ---------*/
+
+.page-footer {
+    padding: 128px 0px 39px 0px;
+}
+
+.page-footer strong {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--gray); 
+}
+
+
+.page-footer strong em {
+    font-weight: 700;
+    font-style: normal;
+    color: var(--gray);
+}
